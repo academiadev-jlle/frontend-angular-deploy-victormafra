@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PetOptions } from './pet/pet.options';
+import { PetOptions } from './shared/pet-list-item/pet-list-item.options';
 
 @Component({
   selector: 'app-root',
@@ -8,26 +8,4 @@ import { PetOptions } from './pet/pet.options';
 })
 export class AppComponent {
   title = 'academia-dev-frontend';
-
-  lostPets: PetOptions[]=[{
-    name: 'Roberto',
-    description: 'Descrição do pet'
-  },{
-    name: 'Robertoso',
-    description: 'Descrição do pet'
-  },{
-    name: 'Adolfo',
-    description: 'Descrição do pet'
-  },{
-    name: 'Rogério',
-    description: 'Descrição do pet'
-  }]
-  
-  adoptionPets: PetOptions[]=[{
-    name: 'Romário',
-    description: 'Descrição do pet'
-  },{
-    name: 'Adão',
-    description: 'Descrição do pet'
-  }]
 }
