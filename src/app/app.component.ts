@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PetOptions } from './pet/pet.options';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'academia-dev-frontend';
-  lostPets=[{
+
+  lostPets: PetOptions[]=[{
     name: 'Roberto',
     description: 'Descrição do pet'
   },{
@@ -20,7 +22,8 @@ export class AppComponent {
     name: 'Rogério',
     description: 'Descrição do pet'
   }]
-  adoptionPets=[{
+  
+  adoptionPets: PetOptions[]=[{
     name: 'Romário',
     description: 'Descrição do pet'
   },{
